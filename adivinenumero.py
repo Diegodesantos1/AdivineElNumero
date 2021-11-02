@@ -17,3 +17,6 @@ while num != numero:
 if numero == num:
     print("¡Has acertado, enhorabuena!")
     print(f"Has necesitado {n_intentos} intentos")
+
+#Esto es una prueba para ver el funcionamiento de la ruedecita
+#No funciona
