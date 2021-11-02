@@ -8,11 +8,11 @@ num=int(input())
 n_intentos=1
 while num != numero:
     if numero < num:
-        print("Te has pasado, selecciona otro número")
+        print("Te has pasado, selecciona otro número menor")
         num=int(input())
         n_intentos += 1
     if numero > num:
-        print("Te has quedado corto, selecciona otro número")
+        print("Te has quedado corto, selecciona otro número mayor")
         num=int(input())
         n_intentos += 1
 if numero == num:
