@@ -1,5 +1,6 @@
 import random
 numero=random.randint (0,99)
+
 int(numero)
 
 print("Dime un número")
