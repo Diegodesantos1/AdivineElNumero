@@ -12,4 +12,4 @@ while num != numero:
         print("Te has quedado corto, selecciona otro número")
         num=int(input())
 if numero == num:
-    print("Has acertado, enhorabuena")
+    print("¡Has acertado, enhorabuena!")
