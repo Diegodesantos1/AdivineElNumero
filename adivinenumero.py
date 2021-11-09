@@ -1,5 +1,9 @@
+
 import random
 numero=random.randint (0,99)
+print("Selecciona el nivel de dificultad 1:Simple, 2:Intermedio, 3:Avanzado, 4:Experto")
+Nivel=int(input())
+
 
 int(numero)
 
