@@ -2,22 +2,28 @@
 import random
 #Defino la función de seleccionar el nivel de dificultad
 def seleccion_nivel():
-    print("Selecciona el nivel de dificultad 1:Simple, 2:Intermedio, 3:Avanzado, 4:Experto")
+    print("Selecciona el nivel de dificultad")
+    print("1:Simple")
+    print("2:Intermedio")
+    print("3:Avanzado")
+    print("4:Experto")
     nivel=int(input())
     global eleccionnivel
     eleccionnivel = nivel
+    if 0< eleccionnivel <=4:
+        if eleccionnivel ==1:
+            print("Has elegido el nivel simple")
 
-    if eleccionnivel ==1:
-        print("Has elegido el nivel simple")
+        if eleccionnivel ==2:
+            print("Has elegido el nivel intermedio")
 
-    if eleccionnivel ==2:
-        print("Has elegido el nivel intermedio")
+        if eleccionnivel ==3:
+            print("Has elegido el nivel avanzado")
 
-    if eleccionnivel ==3:
-        print("Has elegido el nivel avanzado")
-
-    if eleccionnivel ==4:
-        print("Has elegido el nivel experto")
+        if eleccionnivel ==4:
+            print("Has elegido el nivel experto")
+    else:
+        print("Nivel no válido")
 seleccion_nivel()
 
 if eleccionnivel ==1:
