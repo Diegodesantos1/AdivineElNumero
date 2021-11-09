@@ -1,7 +1,7 @@
-#Mensaje de selección del nivel de difiultad
+#Mensaje de selección del nivel de dificultad
 print("Selecciona el nivel de dificultad 1:Simple, 2:Intermedio, 3:Avanzado, 4:Experto")
 nivel=int(input())
-
+#En función del nivel seleccionado se ejecuta esa parte del código
 if nivel ==1:
     import random
     numero=random.randint (0,100)
@@ -26,6 +26,7 @@ if nivel ==1:
     if numero == num:
         print("¡Has acertado, enhorabuena!")
         print(f"Has necesitado {n_intentos} intentos")
+#En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 
 if nivel ==2:
     import random
@@ -51,7 +52,7 @@ if nivel ==2:
     if numero == num:
         print("¡Has acertado, enhorabuena!")
         print(f"Has necesitado {n_intentos} intentos")
-
+#En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 if nivel ==3:
     import random
     numero=random.randint (0,1000000)
@@ -76,7 +77,7 @@ if nivel ==3:
     if numero == num:
         print("¡Has acertado, enhorabuena!")
         print(f"Has necesitado {n_intentos} intentos")
-
+#En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 if nivel ==4:
     import random
     numero=random.randint (0,1000000000000)
@@ -101,4 +102,6 @@ if nivel ==4:
     if numero == num:
         print("¡Has acertado, enhorabuena!")
         print(f"Has necesitado {n_intentos} intentos")
+#En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 
+#En cada nivel de dificultad se van duplicando los intentos, fácil=20, intermedio=40, difícil= 80 y Experto = 160
