@@ -14,13 +14,13 @@ def seleccion_nivel():
         if eleccionnivel ==1:
             print("Has elegido el nivel simple")
 
-        if eleccionnivel ==2:
+        elif eleccionnivel ==2:
             print("Has elegido el nivel intermedio")
 
-        if eleccionnivel ==3:
+        elif eleccionnivel ==3:
             print("Has elegido el nivel avanzado")
 
-        if eleccionnivel ==4:
+        elif eleccionnivel ==4:
             print("Has elegido el nivel experto")
     else:
         print("Nivel no válido")
@@ -40,7 +40,7 @@ if eleccionnivel ==1:
             print("Te has pasado, selecciona otro número menor")
             num=int(input())
             n_intentos += 1
-        if numero > num:
+        elif numero > num:
             print("Te has quedado corto, selecciona otro número mayor")
             num=int(input())
             n_intentos += 1
@@ -64,7 +64,7 @@ if eleccionnivel ==2:
             print("Te has pasado, selecciona otro número menor")
             num=int(input())
             n_intentos += 1
-        if numero > num:
+        elif numero > num:
             print("Te has quedado corto, selecciona otro número mayor")
             num=int(input())
             n_intentos += 1
@@ -87,7 +87,7 @@ if eleccionnivel ==3:
             print("Te has pasado, selecciona otro número menor")
             num=int(input())
             n_intentos += 1
-        if numero > num:
+        elif numero > num:
             print("Te has quedado corto, selecciona otro número mayor")
             num=int(input())
             n_intentos += 1
@@ -110,7 +110,7 @@ if eleccionnivel ==4:
             print("Te has pasado, selecciona otro número menor")
             num=int(input())
             n_intentos += 1
-        if numero > num:
+        elif numero > num:
             print("Te has quedado corto, selecciona otro número mayor")
             num=int(input())
             n_intentos += 1
@@ -121,9 +121,9 @@ if eleccionnivel ==4:
 #En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 
 #En cada nivel de dificultad se van duplicando los intentos, fácil=20, intermedio=40, difícil= 80 y Experto = 160
-
+puntuacion=n_intentos_max-n_intentos
 print("¿Cuál es tu nombre?")
 nombre=str(input())
 from tabulate import tabulate
-table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,n_intentos]]
+table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
 print(tabulate(table, headers='firstrow', tablefmt='grid'))
