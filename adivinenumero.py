@@ -20,7 +20,7 @@ if nivel ==1:
             print("Te has quedado corto, selecciona otro número mayor")
             num=int(input())
             n_intentos += 1
-    if n_intentos > 40:
+    if n_intentos >= 20:
         print("Se te han acabado los intentos, derrota")
     if numero == num:
         print("¡Has acertado, enhorabuena!")
@@ -44,7 +44,7 @@ if nivel ==2:
             print("Te has quedado corto, selecciona otro número mayor")
             num=int(input())
             n_intentos += 1
-    if n_intentos > 40:
+    if n_intentos >= 40:
         print("Se te han acabado los intentos, derrota")
     if numero == num:
         print("¡Has acertado, enhorabuena!")
