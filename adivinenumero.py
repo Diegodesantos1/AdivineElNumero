@@ -12,24 +12,22 @@ def seleccion_nivel():
     eleccionnivel = nivel
     if 0< eleccionnivel <=4:
         if eleccionnivel ==1:
-            print("Has elegido el nivel simple")
+            print("Has elegido el nivel simple, tienes que adivinar un número del 0 al 100 y sólo tienes 20 intentos")
 
         elif eleccionnivel ==2:
-            print("Has elegido el nivel intermedio")
+            print("Has elegido el nivel intermedio, tienes que adivinar un número del 0 al 1000 y sólo tienes 40 intentos")
 
         elif eleccionnivel ==3:
-            print("Has elegido el nivel avanzado")
+            print("Has elegido el nivel avanzado, tienes que adivinar un número del 0 al 1.000.000 y sólo tienes 80 intentos")
 
         elif eleccionnivel ==4:
-            print("Has elegido el nivel experto")
+            print("Has elegido el nivel experto, tienes que adivinar un número del 0 al 1.000.000.000.000 y sólo tienes 160 intentos")
     else:
         print("Nivel no válido")
 seleccion_nivel()
 
 if eleccionnivel ==1:
     numero=random.randint (0,100)
-    print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 100 y sólo tienes 20 intentos")
-    int(numero)
     print("Dime un número")
     num=int(input())
     n_intentos=1
@@ -52,8 +50,6 @@ if eleccionnivel ==1:
 
 if eleccionnivel ==2:
     numero=random.randint (0,1000)
-    print("Has seleccionado el nivel Intermedio, tienes que adivinar un número del 0 al 1000 y sólo tienes 40 intentos")
-    int(numero)
     print("Dime un número")
     num=int(input())
     n_intentos_max=40
@@ -75,8 +71,6 @@ if eleccionnivel ==2:
 #En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 if eleccionnivel ==3:
     numero=random.randint (0,1000000)
-    print("Has seleccionado el nivel Avanzado, tienes que adivinar un número del 0 al 1.000.000 y sólo tienes 80 intentos")
-    int(numero)
     print("Dime un número")
     num=int(input())
     n_intentos=1
@@ -98,8 +92,6 @@ if eleccionnivel ==3:
 #En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 if eleccionnivel ==4:
     numero=random.randint (0,1000000000000)
-    print("Has seleccionado el nivel Experto, tienes que adivinar un número del 0 al 1.000.000.000.000 y sólo tienes 160 intentos")
-    int(numero)
     print("Dime un número")
     num=int(input())
     n_intentos=1
