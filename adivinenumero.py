@@ -126,5 +126,4 @@ print("¿Cuál es tu nombre?")
 nombre=str(input())
 from tabulate import tabulate
 table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,n_intentos]]
-print(table)
 print(tabulate(table, headers='firstrow', tablefmt='grid'))
