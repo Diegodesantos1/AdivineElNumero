@@ -121,3 +121,10 @@ if eleccionnivel ==4:
 #En cada intento te indica el programa si estas por debajo o encima y los intentos que llevas y te quedan
 
 #En cada nivel de dificultad se van duplicando los intentos, fácil=20, intermedio=40, difícil= 80 y Experto = 160
+
+print("¿Cuál es tu nombre?")
+nombre=str(input())
+from tabulate import tabulate
+table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,n_intentos]]
+print(table)
+print(tabulate(table, headers='firstrow', tablefmt='grid'))
