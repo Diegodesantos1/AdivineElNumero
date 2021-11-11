@@ -51,12 +51,12 @@ if eleccionnivel ==1 and eleccionjugador == 1:
         print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
         if numeroAadivinar < numIA:
             print("Te has pasado, selecciona otro número menor")
-            numIA= random.randint (numeroAadivinar,numIA)
+            numIA= random.randint (numeroAadivinar,(numIA - 1)) #Pongo -1 para evitar que repita número
             print(numIA)
             n_intentos += 1
         elif numeroAadivinar > numIA:
             print("Te has quedado corto, selecciona otro número mayor")
-            numIA= random.randint (numIA,numeroAadivinar)
+            numIA= random.randint ((numIA + 1),numeroAadivinar) #Pongo +1 para evitar que repita número
             print(numIA)
             n_intentos += 1
     if n_intentos >= n_intentos_max:
@@ -95,12 +95,12 @@ if eleccionnivel ==2 and eleccionjugador == 1:
         print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
         if numeroAadivinar < numIA:
             print("Te has pasado, selecciona otro número menor")
-            numIA= random.randint (numeroAadivinar,numIA)
+            numIA= random.randint (numeroAadivinar,(numIA - 1)) #Pongo -1 para evitar que repita número
             print(numIA)
             n_intentos += 1
         elif numeroAadivinar > numIA:
             print("Te has quedado corto, selecciona otro número mayor")
-            numIA= random.randint (numIA,numeroAadivinar)
+            numIA= random.randint ((numIA + 1),numeroAadivinar) #Pongo +1 para evitar que repita número
             print(numIA)
             n_intentos += 1
     if n_intentos >= n_intentos_max:
@@ -139,12 +139,12 @@ if eleccionnivel ==3 and eleccionjugador == 1:
         print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
         if numeroAadivinar < numIA:
             print("Te has pasado, selecciona otro número menor")
-            numIA= random.randint (numeroAadivinar,numIA)
+            numIA= random.randint (numeroAadivinar,(numIA - 1)) #Pongo -1 para evitar que repita número
             print(numIA)
             n_intentos += 1
         elif numeroAadivinar > numIA:
             print("Te has quedado corto, selecciona otro número mayor")
-            numIA= random.randint (numIA,numeroAadivinar)
+            numIA= random.randint ((numIA + 1),numeroAadivinar) #Pongo +1 para evitar que repita número
             print(numIA)
             n_intentos += 1
     if n_intentos >= n_intentos_max:
@@ -183,12 +183,12 @@ if eleccionnivel ==4 and eleccionjugador == 1:
         print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
         if numeroAadivinar < numIA:
             print("Te has pasado, selecciona otro número menor")
-            numIA= random.randint (numeroAadivinar,numIA)
+            numIA= random.randint (numeroAadivinar,(numIA - 1)) #Pongo -1 para evitar que repita número
             print(numIA)
             n_intentos += 1
         elif numeroAadivinar > numIA:
             print("Te has quedado corto, selecciona otro número mayor")
-            numIA=random.randint (numIA,numeroAadivinar)
+            numIA=random.randint ((numIA + 1),numeroAadivinar) #Pongo +1 para evitar que repita número
             print(numIA)
             n_intentos += 1
     if n_intentos >= n_intentos_max:
