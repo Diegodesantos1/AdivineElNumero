@@ -36,18 +36,26 @@ def realizarjuego():
     else:
         print("Nivel no válido")
     if jugador == 1:
+        numIA= random.randint(min,max) #Esto se definirá más adelante.
         n_intentos = 0
         while n_intentos < n_intentos_max:
             print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
-            numero= int(input())
             n_intentos += 1
             if numero < numeroAadivinar:
                 print("Te has quedado corto, selecciona otro número mayor")
             if numero > numeroAadivinar:
                 print("Te has pasado, selecciona otro número menor")
-
-
-
+            if numero == numeroAadivinar:
+                break
+        if numero == numeroAadivinar:
+            print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
+            puntuacion = n_intentos_max - n_intentos
+            print("¿Dime tu nombre")
+            nombre="IA"
+            table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
+            print(tabulate(table, headers='firstrow', tablefmt='grid'))
+        if numero != numeroAadivinar :
+            print("Se te han acabado los intentos, derrota")
 
 
 
