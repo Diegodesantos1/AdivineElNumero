@@ -240,4 +240,4 @@ else:
     nombre=str(input())
 from tabulate import tabulate
 table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
-print(tabulate(table, headers='firstrow', tablefmt='grid'))```
+print(tabulate(table, headers='firstrow', tablefmt='grid'))
