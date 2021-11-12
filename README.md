@@ -6,4 +6,9 @@ He resuelto el juego de adivinar valores enteros en función del nivel de dificu
 
 El diagrama de flujo que he realizado para este código es:
 [Diagrama de flujo de adivinar el número]
-[C://
+[C:\Users\Usuario\Desktop\PROGRAMACION\AdivineElNumero]
+
+El código empleado para resolverlo es el siguiente:
+
+
+```
