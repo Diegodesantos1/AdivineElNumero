@@ -6,6 +6,8 @@ He resuelto el juego de adivinar valores enteros en función del nivel de dificu
 
 El diagrama de flujo que he realizado para este código es:
 [Diagrama de flujo de adivinar el número]
+
+file:///C:/Users/Usuario/Downloads/AdivinarN%C3%BAmeroFlowchart.drawio.html
 <br>
 <img height="720" src="https://github.com/Diegodesantos1/AdivineElNumero/blob/main/AdivinarN%C3%BAmeroFlowchart.png" />
 <br>
