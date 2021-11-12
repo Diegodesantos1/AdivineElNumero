@@ -96,12 +96,13 @@ if eleccionnivel ==1:
     tabla()
 if eleccionnivel ==2:
     seleccion_jugador()
-    if seleccion_jugador ==1:
+    if eleccionjugador ==1:
         numeroAadivinar=random.randint (0,1000)
-        print("Has seleccionado el nivel Intermedio, tienes que adivinar un número del 0 al 1000 y sólo tienes 25 intentos")
+        print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 1000 y sólo tienes 25 intentos")
         numIA= random.randint (0,1000)
-        n_intentos_max=25
+        print(numIA)
         n_intentos=1
+        n_intentos_max=25
         while numIA != numeroAadivinar and n_intentos < n_intentos_max: #Establezco el bucle
             print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
             if numeroAadivinar < numIA:
@@ -118,13 +119,13 @@ if eleccionnivel ==2:
             print("Se te han acabado los intentos, derrota")
         if numeroAadivinar == numIA:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-    elif seleccion_jugador == 2:
+    elif eleccionjugador ==2:
         numero=random.randint (0,1000)
-        print("Has seleccionado el nivel Intermedio, tienes que adivinar un número del 0 al 1000 y sólo tienes 25 intentos")
+        print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 1000 y sólo tienes 25 intentos")
         print("Dime un número")
         num=int(input())
-        n_intentos_max=25
         n_intentos=1
+        n_intentos_max=25
         while num != numero and n_intentos < n_intentos_max: #Establezco el bucle
             print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
             if numero < num:
@@ -139,12 +140,14 @@ if eleccionnivel ==2:
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
+    tabla()
 if eleccionnivel ==3:
     seleccion_jugador()
-    if seleccion_jugador == 1:
+    if eleccionjugador ==1:
         numeroAadivinar=random.randint (0,1000000)
-        print("Has seleccionado el nivel Avanzado, tienes que adivinar un número del 0 al 1.000.000 y sólo tienes 50 intentos")
-        numIA=random.randint (0,1000000)
+        print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 1000000 y sólo tienes 50 intentos")
+        numIA= random.randint (0,1000000)
+        print(numIA)
         n_intentos=1
         n_intentos_max=50
         while numIA != numeroAadivinar and n_intentos < n_intentos_max: #Establezco el bucle
@@ -163,9 +166,9 @@ if eleccionnivel ==3:
             print("Se te han acabado los intentos, derrota")
         if numeroAadivinar == numIA:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-    elif seleccion_jugador == 2:
+    elif eleccionjugador ==2:
         numero=random.randint (0,1000000)
-        print("Has seleccionado el nivel Avanzado, tienes que adivinar un número del 0 al 1.000.000 y sólo tienes 50 intentos")
+        print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 1000000 y sólo tienes 50 intentos")
         print("Dime un número")
         num=int(input())
         n_intentos=1
@@ -184,12 +187,14 @@ if eleccionnivel ==3:
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
+    tabla()
 if eleccionnivel ==4:
     seleccion_jugador()
-    if seleccion_jugador == 1:
+    if eleccionjugador ==1:
         numeroAadivinar=random.randint (0,1000000000000)
-        print("Has seleccionado el nivel Experto, tienes que adivinar un número del 0 al 1.000.000.000.000 y sólo tienes 100 intentos")
-        numIA=random.randint (0,1000000000000)
+        print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 1000000000000 y sólo tienes 100 intentos")
+        numIA= random.randint (0,1000000000000)
+        print(numIA)
         n_intentos=1
         n_intentos_max=100
         while numIA != numeroAadivinar and n_intentos < n_intentos_max: #Establezco el bucle
@@ -201,16 +206,16 @@ if eleccionnivel ==4:
                 n_intentos += 1
             elif numeroAadivinar > numIA:
                 print("Te has quedado corto, selecciona otro número mayor")
-                numIA=random.randint ((numIA + 1),numeroAadivinar) #Pongo +1 para evitar que repita número
+                numIA= random.randint ((numIA + 1),numeroAadivinar) #Pongo +1 para evitar que repita número
                 print(numIA)
                 n_intentos += 1
         if n_intentos >= n_intentos_max:
             print("Se te han acabado los intentos, derrota")
         if numeroAadivinar == numIA:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-    elif seleccion_jugador == 2:
+    elif eleccionjugador ==2:
         numero=random.randint (0,1000000000000)
-        print("Has seleccionado el nivel Experto, tienes que adivinar un número del 0 al 1.000.000.000.000 y sólo tienes 100 intentos")
+        print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 1000000000000 y sólo tienes 100 intentos")
         print("Dime un número")
         num=int(input())
         n_intentos=1
@@ -229,3 +234,4 @@ if eleccionnivel ==4:
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
+    tabla()
