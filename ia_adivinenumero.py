@@ -36,6 +36,17 @@ def seleccion_jugador():
             print("Has elegido tú")
     else:
         print("Nivel no válido")
+def tabla():
+    puntuacion=n_intentos_max-n_intentos
+    if eleccionjugador ==1:
+        nombre=("IA")
+    else:
+        print("¿Dime tu nombre")
+        nombre=str(input())
+    table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
+    print(tabulate(table, headers='firstrow', tablefmt='grid'))
+
+
 if eleccionnivel ==1:
     seleccion_jugador()
     if eleccionjugador ==1:
@@ -217,12 +228,3 @@ if eleccionnivel ==4:
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-
-puntuacion=n_intentos_max-n_intentos
-if eleccionjugador ==1:
-    nombre=("IA")
-else:
-    print("¿Dime tu nombre")
-    nombre=str(input())
-table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
-print(tabulate(table, headers='firstrow', tablefmt='grid'))
