@@ -23,10 +23,11 @@ def seleccion_nivel():
     else:
         print("Nivel no válido")
 seleccion_nivel()
-def realizarjuego():
+def seleccion_jugador():
     print("Escriba 1 para que juegue la IA")
     print("Escriba 2 para jugar tú")
     jugador=int(input())
+    global eleccionjugador
     eleccionjugador = jugador
     if 0< eleccionjugador <=2:
         if eleccionjugador == 1:
@@ -35,44 +36,18 @@ def realizarjuego():
             print("Has elegido tú")
     else:
         print("Nivel no válido")
-    if jugador == 1:
-        numIA= random.randint(min,max) #Esto se definirá más adelante.
-        n_intentos = 0
-        while n_intentos < n_intentos_max:
-            print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
-            n_intentos += 1
-            if numero < numeroAadivinar:
-                print("Te has quedado corto, selecciona otro número mayor")
-            if numero > numeroAadivinar:
-                print("Te has pasado, selecciona otro número menor")
-            if numero == numeroAadivinar:
-                break
-        if numero == numeroAadivinar:
-            print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-            puntuacion = n_intentos_max - n_intentos
-            print("¿Dime tu nombre")
-            nombre="IA"
-            table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
-            print(tabulate(table, headers='firstrow', tablefmt='grid'))
-        if numero != numeroAadivinar :
-            print("Se te han acabado los intentos, derrota")
+def tabla():
+    puntuacion=n_intentos_max-n_intentos
+    if eleccionjugador ==1:
+        nombre=("IA")
+    else:
+        print("¿Dime tu nombre")
+        nombre=str(input())
+    table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
+    print(tabulate(table, headers='firstrow', tablefmt='grid'))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if eleccionnivel ==1: #Nivel simple
+if eleccionnivel ==1:
     seleccion_jugador()
     if eleccionjugador ==1:
         numeroAadivinar=random.randint (0,100)
@@ -118,7 +93,8 @@ if eleccionnivel ==1: #Nivel simple
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-if eleccionnivel ==2: #Nivel intermedio
+    tabla()
+if eleccionnivel ==2:
     seleccion_jugador()
     if seleccion_jugador ==1:
         numeroAadivinar=random.randint (0,1000)
@@ -163,7 +139,7 @@ if eleccionnivel ==2: #Nivel intermedio
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-if eleccionnivel ==3: #Nivel difícil
+if eleccionnivel ==3:
     seleccion_jugador()
     if seleccion_jugador == 1:
         numeroAadivinar=random.randint (0,1000000)
@@ -208,7 +184,7 @@ if eleccionnivel ==3: #Nivel difícil
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-if eleccionnivel ==4: #Nivel avanzado
+if eleccionnivel ==4:
     seleccion_jugador()
     if seleccion_jugador == 1:
         numeroAadivinar=random.randint (0,1000000000000)
@@ -253,12 +229,3 @@ if eleccionnivel ==4: #Nivel avanzado
             print("Se te han acabado los intentos, derrota")
         if numero == num:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
-
-puntuacion=n_intentos_max-n_intentos
-if eleccionjugador ==1:
-    nombre=("IA")
-else:
-    print("¿Dime tu nombre")
-    nombre=str(input())
-table = [['Nombre', 'Nivel de dificultad', 'Puntuación'],[nombre, eleccionnivel,puntuacion]]
-print(tabulate(table, headers='firstrow', tablefmt='grid'))
