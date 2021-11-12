@@ -39,6 +39,24 @@ def realizarjuego():
         n_intentos = 0
         while n_intentos < n_intentos_max:
             print(f"Llevas ya {n_intentos} intentos, cuidado, te quedan {n_intentos_max-n_intentos} intentos")
+            numero= int(input())
+            n_intentos += 1
+            if numero < numeroAadivinar:
+                print("Te has quedado corto, selecciona otro número mayor")
+            if numero > numeroAadivinar:
+                print("Te has pasado, selecciona otro número menor")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
