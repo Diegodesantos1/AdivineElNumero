@@ -3,10 +3,7 @@ import random
 #Defino la función de seleccionar el nivel de dificultad, como la IA lo hace automático, aumento el número de intentos en cada caso
 def seleccion_nivel():
     print("Selecciona el nivel de dificultad")
-    print("1:Simple")
-    print("2:Intermedio")
-    print("3:Avanzado")
-    print("4:Experto")
+    print("\n 1:Simple"+ "\n 2:Intermedio" + "\n 3:Avanzado" + "\n 4:Experto")
     nivel=int(input())
     global eleccionnivel
     eleccionnivel = nivel
