@@ -1,4 +1,4 @@
-#Importamos random
+#Importamos lo necesario
 import random
 from tabulate import tabulate
 #Defino la función de seleccionar el nivel de dificultad, como la IA lo hace automático, aumento el número de intentos en cada caso
