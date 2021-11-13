@@ -9,7 +9,7 @@ El diagrama de flujo que he realizado para este código es:
 <br>
 <img height="780" src="https://github.com/Diegodesantos1/AdivineElNumero/blob/main/FlowchartAdivinarN%C3%BAmeroDef.jpg" />
 <br>
-Para verlo más claro pincha aquí: [Flowchart](https://github.com/Diegodesantos1/AdivineElNumero/blob/main/FlowchartAdivinarN%C3%BAmeroDef.jpg)
+Para verlo más claro pincha aquí: https://github.com/Diegodesantos1/AdivineElNumero/blob/main/FlowchartAdivinarN%C3%BAmeroDef.jpg
 
 
 El código empleado para resolverlo es el siguiente:
