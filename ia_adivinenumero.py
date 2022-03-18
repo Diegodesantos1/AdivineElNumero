@@ -73,7 +73,7 @@ if eleccionnivel ==1:
         if numeroAadivinar == numIA:
             print(f"¡Has acertado, enhorabuena, has necesitado {n_intentos} intentos!")
     elif eleccionjugador ==2:
-        numero=random.randint (0,100)
+        numero=random.randint (0,4)
         print("Has seleccionado el nivel simple, tienes que adivinar un número del 0 al 100 y sólo tienes 10 intentos")
         print("Dime un número")
         num=int(input())
